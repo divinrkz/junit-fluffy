@@ -17,5 +17,14 @@ public class CalculatorServiceImplTest {
         assertEquals (expectedResult, actualResult);
     }
 
+    @Test
+    public void calcSum_manyElements() {
+        CalculatorServiceImpl calculatorServiceImpl = new CalculatorServiceImpl();
+
+        int actualResult = calculatorServiceImpl.calculateSum(new int[] {4});
+        int expectedResult = 0;
+
+        assertEquals(expectedResult, actualResult);
+    }
 
 }
