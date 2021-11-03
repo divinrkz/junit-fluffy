@@ -1,11 +1,13 @@
 package com.example.rca.classb.junittest.services.impls;
 
+import com.example.rca.classb.junittest.services.ICalculatorService;
+
 public class CalculatorServiceImpl {
 
-    CalculatorServiceImpl calculatorServiceImpl;
+    ICalculatorService calculatorService;
 
-    public void setCalculatorServiceImpl(CalculatorServiceImpl calculatorService) {
-        this.calculatorServiceImpl = calculatorService;
+    public void setCalculatorService(ICalculatorService calculatorService) {
+        this.calculatorService = calculatorService;
     }
 
     public int calculateSum(int[] data) {
@@ -14,6 +16,14 @@ public class CalculatorServiceImpl {
             sum += value;
         }
         return  sum;
+    }
+
+    public int calcSumForServiceData() {
+        int sum = 0;
+        for (int value : calculatorService.getAll()) {
+            sum += value;
+        }
+        return sum;
     }
 
 
