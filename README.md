@@ -1,2 +1,2 @@
 # junit-fluffy
-JUnit tests 
+Introduction to JUnit tests 
