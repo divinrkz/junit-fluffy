@@ -1,6 +1,6 @@
 package com.example.rca.classb.junittest.services.impls;
 
-import com.example.rca.classb.junittest.services.impls.CalculatorServiceImpl;
+
 import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
