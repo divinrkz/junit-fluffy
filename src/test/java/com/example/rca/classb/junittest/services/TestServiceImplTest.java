@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class CalculatorServiceImplTest {
+public class TestServiceImplTest {
 
     @Test
     public void calcSum_emptyList() {
@@ -28,13 +28,7 @@ public class CalculatorServiceImplTest {
         assertEquals(expectedResult, actualResult);
     }
 
-    @Test
-    public void calSum_zeroElements() {
-        CalculatorServiceImpl calculatorServiceImpl = new CalculatorServiceImpl();
-        int actual = calculatorServiceImpl.calculateSum(new int[] {0, 0, 0, 0});
-        int expected = 0;
+    public void testSum_emptyList() {
 
-        assertEquals(expected, actual);
     }
-
 }
