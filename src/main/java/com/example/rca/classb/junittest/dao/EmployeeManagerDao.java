@@ -15,9 +15,7 @@ public class EmployeeManagerDao {
     public List<EmployeeManager> getEmployeeList()
     {
         List<EmployeeManager> list = new ArrayList<>();
-        if(list.isEmpty()) {
-            list.addAll(DB.values());
-        }
+        list.addAll(DB.values());
         return list;
     }
 
